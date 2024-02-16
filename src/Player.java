@@ -11,7 +11,8 @@ abstract public class Player {
         return name;
     }
     public void setName(String name) {
-        if (name != null && name.matches("^[A-Za-z0-9.\\-_]{3,}$")) { // imie moze skladac sie z malych i duzych znakow, cyfr i znakow . \ - _ , min. 3 znaki
+        // imie moze skladac sie z malych i duzych znakow, cyfr i znakow . \ - _ , min. 3 znaki
+        if (name != null && name.matches("^[A-Za-z0-9.\\-_]{3,}$")) {
             this.name = name;
         }
         else {

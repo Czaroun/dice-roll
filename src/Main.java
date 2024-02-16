@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-//        Game game = new Game(new WinStatics());
-        Game game = new Game();
+        Game game = new Game(new WinStatistics());
+//        Game game = new Game();
         game.addPlayer(new PlayerComp("Bot_Bob"));
         game.addPlayer(new PlayerComp("Bot_Mark"));
 
@@ -9,6 +9,6 @@ public class Main {
             game.play();
         }
 
-//        game.stats.print();
+        game.stats.print();
     }
 }

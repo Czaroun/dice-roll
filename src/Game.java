@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class Game {
     private Random dice = new Random();
-    private List<Player> players = new ArrayList();
+    private List<Player> players = new ArrayList<>();
     private int cnt = -1;
     public final Statistics stats;
     public Game() {
