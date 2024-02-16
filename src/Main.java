@@ -3,8 +3,9 @@ public class Main {
         GamePrinterPL printer = new GamePrinterPL();
         GameScanner gameScanner = new GameScanner();
         printer.printGameWithStatistics();
-// Game game = new Game(printer.printGameWithStatistics())
-        Game game = new Game(new WinStatistics());
+
+        Game game = new Game(gameScanner.GameWithStatistics());
+//        Game game = new Game(new WinStatistics());
 //        Game game = new Game();
         game.addPlayer(new PlayerComp("Bot_Bob"));
         game.addPlayer(new PlayerComp("Bot_Mark"));
