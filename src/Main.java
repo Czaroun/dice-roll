@@ -1,5 +1,9 @@
 public class Main {
     public static void main(String[] args) {
+        GamePrinterPL printer = new GamePrinterPL();
+        GameScanner gameScanner = new GameScanner();
+        printer.printGameWithStatistics();
+// Game game = new Game(printer.printGameWithStatistics())
         Game game = new Game(new WinStatistics());
 //        Game game = new Game();
         game.addPlayer(new PlayerComp("Bot_Bob"));
