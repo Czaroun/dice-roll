@@ -32,4 +32,9 @@ public class GamePrinterPL implements GamePrinter {
         System.out.println("4.Usuń gracza (komputer)");
         System.out.println("5.Rozpocznij gre");
     }
+
+    @Override
+    public void printEnterNameMulti() {
+        System.out.println("Wprowadz imie gracza: ");
+    }
 }

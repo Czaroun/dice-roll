@@ -31,4 +31,9 @@ public class GamePrinterEN implements GamePrinter{
         System.out.println("4.Delete player (computer)");
         System.out.println("5.Start game");
     }
+
+    @Override
+    public void printEnterNameMulti() {
+        System.out.println("Enter playerr name: ");
+    }
 }

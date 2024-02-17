@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class GameScanner {
     private Scanner input = new Scanner(System.in);
     private int choice = 0;
+    private MultiConfig multiConfig = new MultiConfig();
     public Statistics GameWithStatistics(){
         setDefaultChoice();
         do {
@@ -30,7 +31,7 @@ public class GameScanner {
     public String enterName() {
         return input.nextLine();
     }
-    public boolean menuMulti(Game game) {
+    public boolean menuMulti(Game game, GamePrinter printer) {
         setDefaultChoice();
         do {
             choice = input.nextInt();
@@ -39,13 +40,13 @@ public class GameScanner {
         input.nextLine();
         switch (choice) {
             case 1:
-                menuMultiAddPlayerHuman(game);
+                multiConfig.addPlayerHuman(game, printer, this);
                 break;
 //            case 2:
 //                menuMultiDeletePlayerHuman(game);
 //                break;
             case 3:
-                menuMultiAddPlayerComp(game);
+                multiConfig.addPlayerComp(game);
                 break;
 //            case 4:
 //                menuMultiDeletePlayerComp(game);
@@ -56,14 +57,6 @@ public class GameScanner {
         }
         return true;
     }
-    private void menuMultiAddPlayerHuman(Game game) {
-        game.addPlayer(new PlayerHuman(enterName()));
-    }
-
-    private void menuMultiAddPlayerComp(Game game) {
-        game.addPlayer(new PlayerComp("Bot"));
-    }
-
 
     private void setDefaultChoice() {
         choice = 0;

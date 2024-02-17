@@ -17,10 +17,18 @@ public class Main {
             boolean startGame = true;
             do {
                 printer.printMenuMulti(game);
-                startGame = gameScanner.menuMulti(game);
-                // ustawienia multi do innej klasy /?
+                startGame = gameScanner.menuMulti(game, printer);
+
             }
             while (startGame);
+
+            /*
+            TO DO:
+                - dodać opcje usuwanie graczy - MultiConfig.java
+                - zmodyfikować game.play() - gracz ma podać ile rund chce zagrać
+                - osobny licznik dla botów
+                * wyjątki
+             */
 
 
         }
