@@ -21,11 +21,14 @@ public class GamePrinterEN implements GamePrinter{
     @Override
     public void printMenuMulti(Game game) {
         System.out.println("---------------------------");
-        System.out.println("LIST OF PLAYERS GRACZY:");
+        System.out.println("LIST OF PLAYERS:");
         game.printPlayers();
+        System.out.println("---------------------------");
+        System.out.println("MENU:");
         System.out.println("1.Add new player");
         System.out.println("2.Delete player");
         System.out.println("3.Add new player (computer)");
         System.out.println("4.Delete player (computer)");
+        System.out.println("5.Start game");
     }
 }

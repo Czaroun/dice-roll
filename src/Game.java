@@ -6,6 +6,7 @@ public class Game {
     private Random dice = new Random();
     private List<Player> players = new ArrayList<>();
     private int cnt = -1;
+//    private int cntBot = -1;
     public final Statistics stats;
     public Game() {
         this(null);

@@ -10,22 +10,20 @@ public class Main {
         printer.printSingleOrMulti();
         if (gameScanner.singleOrMulti()) { // singleplayer
             printer.printEnterNameSingle();
-            String name = gameScanner.EnterNameSingle();
+            String name = gameScanner.enterName();
             game.addPlayer(new PlayerHuman(name));
         }
         else { // multiplayer
-            /*
-            1. lista graczy
-            2. opcje: 1. dodaj gracza
-                    2   2. dodaj bota
-             */
-            printer.printMenuMulti(game);
+            boolean startGame = true;
+            do {
+                printer.printMenuMulti(game);
+                startGame = gameScanner.menuMulti(game);
+                // ustawienia multi do innej klasy /?
+            }
+            while (startGame);
+
 
         }
-
-        game.addPlayer(new PlayerComp("Bot_Bob"));
-        game.addPlayer(new PlayerComp("Bot_Mark"));
-
         for (int i = 0; i < 5; i++) {
             game.play();
         }

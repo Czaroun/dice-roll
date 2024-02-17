@@ -27,8 +27,41 @@ public class GameScanner {
         // 1 - singleplayer, 2 - multiplayer
         return choice == 1;
     }
-    public String EnterNameSingle() {
+    public String enterName() {
         return input.nextLine();
+    }
+    public boolean menuMulti(Game game) {
+        setDefaultChoice();
+        do {
+            choice = input.nextInt();
+        }
+        while (choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5);
+        input.nextLine();
+        switch (choice) {
+            case 1:
+                menuMultiAddPlayerHuman(game);
+                break;
+//            case 2:
+//                menuMultiDeletePlayerHuman(game);
+//                break;
+            case 3:
+                menuMultiAddPlayerComp(game);
+                break;
+//            case 4:
+//                menuMultiDeletePlayerComp(game);
+//                break;
+            case 5:
+                System.out.println();
+                return false;
+        }
+        return true;
+    }
+    private void menuMultiAddPlayerHuman(Game game) {
+        game.addPlayer(new PlayerHuman(enterName()));
+    }
+
+    private void menuMultiAddPlayerComp(Game game) {
+        game.addPlayer(new PlayerComp("Bot"));
     }
 
 
