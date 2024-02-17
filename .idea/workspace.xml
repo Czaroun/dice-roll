@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5da2e2c-6303-4226-b434-cd75a642bf3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/GamePrinterEN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GamePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GamePrinterPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePrinterPL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameScanner.java" afterDir="false" />
@@ -68,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708020373692</updated>
       <workItem from="1708020374774" duration="2055000" />
-      <workItem from="1708111262365" duration="8361000" />
+      <workItem from="1708111262365" duration="11079000" />
     </task>
     <servers />
   </component>

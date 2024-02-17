@@ -35,7 +35,6 @@ public class Game {
         players.forEach( (player) -> {
             System.out.println(player.getName());
         });
-        System.out.println("---------------------------");
     }
     public void removePlayer(String name) {
         players.removeIf(player -> player.getName().equals(name));
