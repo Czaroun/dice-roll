@@ -7,7 +7,6 @@ public class Game {
     private List<Player> players = new ArrayList<>();
     private int cnt = -1;
     private int cntBot = -1;
-//    private int rounds = 5;
     public final Settings settings;
     public final Statistics stats;
     public Game() {
@@ -66,8 +65,6 @@ public class Game {
         players.add(player);
         stats.addPlayer(player);
     }
-
-
     public void printPlayers() {
         players.forEach( (player) -> {
             System.out.println(player.getName());

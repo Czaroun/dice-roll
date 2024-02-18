@@ -1,10 +1,16 @@
 import java.sql.SQLOutput;
 
-public class GamePrinterEN implements GamePrinter{
+public class GamePrinterEN implements GamePrinter {
     @Override
     public void printGameWithStatistics() {
         System.out.println("1.Game with statistics");
         System.out.println("2.Game without statistics");
+    }
+
+    @Override
+    public void printGameWithSettings() {
+        System.out.println("1.Quick singleplayer game");
+        System.out.println("2.Game mode (Singleplayer/Multiplayer, Customised settings)");
     }
 
     @Override
@@ -31,7 +37,6 @@ public class GamePrinterEN implements GamePrinter{
         System.out.println("LIST OF PLAYERS:");
         game.printPlayers();
         System.out.println("---------------------------");
-        System.out.println("MENU:");
         System.out.println("1.Add new player");
         System.out.println("2.Remove player");
         System.out.println("3.Add new player (computer)");

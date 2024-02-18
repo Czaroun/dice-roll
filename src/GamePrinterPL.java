@@ -1,11 +1,16 @@
 import java.util.Scanner;
 
 public class GamePrinterPL implements GamePrinter {
-    private Scanner input = new Scanner(System.in);
     @Override
     public void printGameWithStatistics() {
         System.out.println("1.Gra ze statystykami");
         System.out.println("2.Gra bez statystyk");
+    }
+
+    @Override
+    public void printGameWithSettings() {
+        System.out.println("1.Szybka gra jednoosobowa");
+        System.out.println("2.Tryb gry (Singleplayer/Multiplayer, Dostosowane ustawienia)");
     }
 
     @Override
@@ -32,7 +37,6 @@ public class GamePrinterPL implements GamePrinter {
         System.out.println("LISTA GRACZY:");
         game.printPlayers();
         System.out.println("---------------------------");
-        System.out.println("MENU:");
         System.out.println("1.Dodaj nowego gracza");
         System.out.println("2.Usuń gracza");
         System.out.println("3.Dodaj nowego gracza (komputer)");

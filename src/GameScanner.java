@@ -4,7 +4,7 @@ public class GameScanner {
     private Scanner input = new Scanner(System.in);
     private int choice = 0;
     private MultiConfig multiConfig = new MultiConfig();
-    public Statistics GameWithStatistics(){
+    public Statistics gameWithStatistics(){
         setDefaultChoice();
         do {
             choice = input.nextInt();
@@ -16,6 +16,20 @@ public class GameScanner {
         }
         else { // 2 - gra bez statystyk
             return null;
+        }
+    }
+    public Settings gameWithSettings() {
+        setDefaultChoice();
+        do {
+            choice = input.nextInt();
+        }
+        while (choice != 1 && choice != 2);
+        input.nextLine(); // bufor clear
+        if (choice == 1) { // 1 - ustawienia domyslne
+            return null;
+        }
+        else { // 2 - ustawienia uzytkownika
+            return new UserSettings();
         }
     }
     public boolean singleOrMulti() {

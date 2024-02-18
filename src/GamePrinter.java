@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public interface GamePrinter {
     void printGameWithStatistics();
+    void printGameWithSettings();
     void printSingleOrMulti();
     void printDefaultSettings();
     void printEnterNameSingle();

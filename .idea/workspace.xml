@@ -6,18 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="c5da2e2c-6303-4226-b434-cd75a642bf3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DefaultSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DefaultSettings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GamePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GamePrinterEN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePrinterEN.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GamePrinterPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePrinterPL.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/GameScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameScanner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NullStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NullStatistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinStatistics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +55,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "advanced.settings",
     "vue.rearranger.settings.migration": "true"
@@ -85,7 +79,7 @@
       <updated>1708020373692</updated>
       <workItem from="1708020374774" duration="2055000" />
       <workItem from="1708111262365" duration="14083000" />
-      <workItem from="1708266616485" duration="15634000" />
+      <workItem from="1708266616485" duration="18253000" />
     </task>
     <servers />
   </component>
@@ -113,13 +107,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Game.java</url>
-          <line>31</line>
+          <line>30</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>9</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
