@@ -6,24 +6,24 @@ public class Main {
         Statistics stats = gameScanner.GameWithStatistics(); // obiekt do statystyk
 
         Game game = new Game(new UserSettings(), stats); // obiekt gry
-        game.config(printer, gameScanner);
+        game.config(game, printer, gameScanner);
 
 
 
-        printer.printSingleOrMulti();
-        if (gameScanner.singleOrMulti()) { // singleplayer
-            printer.printEnterNameSingle();
-            String name = gameScanner.enterName();
-            game.addPlayer(new PlayerHuman(name));
-        }
-        else { // multiplayer
-            boolean startGame = true;
-            do {
-                printer.printMenuMulti(game);
-                startGame = gameScanner.menuMulti(game, printer);
-
-            }
-            while (startGame);
+//        printer.printSingleOrMulti();
+//        if (gameScanner.singleOrMulti()) { // singleplayer
+//            printer.printEnterNameSingle();
+//            String name = gameScanner.enterName();
+//            game.addPlayer(new PlayerHuman(name));
+//        }
+//        else { // multiplayer
+//            boolean startGame = true;
+//            do {
+//                printer.printMenuMulti(game);
+//                startGame = gameScanner.menuMulti(game, printer);
+//
+//            }
+//            while (startGame);
 
             /*
             TO DO:
@@ -34,10 +34,10 @@ public class Main {
              */
 
 
-        }
-        printer.printHowManyRounds();
-        game.setRounds(gameScanner.enterNumber());
-        for (int i = 0; i < game.getRounds(); i++) {
+//        }
+//        printer.printHowManyRounds();
+//        game.settings.setRounds(gameScanner.enterNumber());
+        for (int i = 0; i < game.settings.getRounds(); i++) {
             game.play(printer, gameScanner);
         }
 

@@ -7,7 +7,7 @@ public class Game {
     private List<Player> players = new ArrayList<>();
     private int cnt = -1;
     private int cntBot = -1;
-    private int rounds = 5;
+//    private int rounds = 5;
     public final Settings settings;
     public final Statistics stats;
     public Game() {
@@ -28,8 +28,28 @@ public class Game {
             this.stats = new NullStatistics();
         }
     }
-    public void config(GamePrinter printer, GameScanner scanner) {
+    public void config(Game game, GamePrinter printer, GameScanner scanner) {
         settings.setGameMode(printer, scanner);
+        if (settings instanceof DefaultSettings) {
+            addPlayer(new PlayerHuman());
+            printer.printDefaultSettings();
+        }
+        else if (settings instanceof UserSettings){
+            if (!settings.isMultiPlayer()) {
+                printer.printEnterNameSingle();
+                addPlayer(new PlayerHuman(scanner.enterName()));
+            }
+            else {
+                boolean startGame = true;
+                do {
+                    printer.printMenuMulti(game);
+                    startGame = scanner.menuMulti(game, printer);
+                }
+                while (startGame);
+            }
+            printer.printHowManyRounds();
+            settings.setRounds(scanner.enterNumber());
+        }
     }
     public void addPlayer(Player player) {
         players.forEach( p -> {
@@ -58,6 +78,7 @@ public class Game {
         if (name.startsWith("Bot-")) {
             cntBot++;
         }
+        stats.removePlayer(name);
     }
     public int getCntBot() {
         return cntBot;
@@ -71,8 +92,11 @@ public class Game {
         ///////////////////////////////////////////
 
         for (Player player : players) {
-            printer.printPlayerTurn(player);
+            if (player instanceof PlayerHuman) {
+                printer.printPlayerTurn(player);
+            }
             guess = player.guess(gameScanner);
+            printer.printPlayerGuess(player, guess);
                 if (guess == number) {
                     printer.printCorrectAnswer();
                     stats.updatePlayer(player);
@@ -83,11 +107,11 @@ public class Game {
             }
     }
 
-    public int getRounds() {
-        return rounds;
-    }
-
-    public void setRounds(int rounds) {
-        this.rounds = rounds;
-    }
+//    public int getRounds() {
+//        return rounds;
+//    }
+//
+//    public void setRounds(int rounds) {
+//        this.rounds = rounds;
+//    }
 }

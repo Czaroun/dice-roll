@@ -10,6 +10,11 @@ public class NullStatistics implements Statistics{
     }
 
     @Override
+    public void removePlayer(String name) {
+
+    }
+
+    @Override
     public void print(GamePrinter printer) {
 
     }

@@ -14,6 +14,13 @@ public class GamePrinterEN implements GamePrinter{
     }
 
     @Override
+    public void printDefaultSettings() {
+        System.out.println("DEFAULT SETTINGS:");
+        System.out.println("- singleplayer");
+        System.out.println("- 5 rounds");
+    }
+
+    @Override
     public void printEnterNameSingle() {
         System.out.println("Enter your name: ");
     }
@@ -52,6 +59,11 @@ public class GamePrinterEN implements GamePrinter{
     @Override
     public void printPlayerTurn(Player player) {
         System.out.println("Player" + player.getName() + " - enter number:");
+    }
+
+    @Override
+    public void printPlayerGuess(Player player, int guess) {
+        System.out.println("Player " + player.getName() + ": " + guess);
     }
 
     @Override

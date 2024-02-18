@@ -15,6 +15,13 @@ public class GamePrinterPL implements GamePrinter {
     }
 
     @Override
+    public void printDefaultSettings() {
+        System.out.println("USTAWIENIA DOMYSLNE:");
+        System.out.println("- gra jednoosobowa");
+        System.out.println("- 5 rund");
+    }
+
+    @Override
     public void printEnterNameSingle() {
         System.out.println("Wprowadz swoje imie: ");
     }
@@ -51,6 +58,11 @@ public class GamePrinterPL implements GamePrinter {
     }
     public void printPlayerTurn(Player player) {
         System.out.println("Gracz " + player.getName() + " - podaj liczbe:");
+    }
+
+    @Override
+    public void printPlayerGuess(Player player, int guess) {
+        System.out.println("Gracz " + player.getName() + ": " + guess);
     }
 
     @Override

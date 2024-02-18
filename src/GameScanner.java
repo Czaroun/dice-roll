@@ -26,7 +26,7 @@ public class GameScanner {
         while (choice != 1 && choice != 2);
         input.nextLine(); // bufor clear
         // 1 - singleplayer, 2 - multiplayer
-        return choice == 1;
+        return choice == 2;
     }
     public String enterName() {
         return input.nextLine();
