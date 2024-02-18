@@ -1,5 +1,3 @@
-import java.sql.SQLOutput;
-
 public class GamePrinterEN implements GamePrinter {
     @Override
     public void printGameWithStatistics() {

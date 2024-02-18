@@ -1,4 +1,4 @@
-public class NullStatistics implements Statistics{
+public class NullStatistics implements Statistics {
     @Override
     public void addPlayer(Player player) {
 

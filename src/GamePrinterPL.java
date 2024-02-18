@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class GamePrinterPL implements GamePrinter {
     @Override
     public void printGameWithStatistics() {
@@ -38,9 +36,9 @@ public class GamePrinterPL implements GamePrinter {
         game.printPlayers();
         System.out.println("---------------------------");
         System.out.println("1.Dodaj nowego gracza");
-        System.out.println("2.Usuń gracza");
+        System.out.println("2.Usun gracza");
         System.out.println("3.Dodaj nowego gracza (komputer)");
-        System.out.println("4.Usuń gracza (komputer)");
+        System.out.println("4.Usun gracza (komputer)");
         System.out.println("5.Rozpocznij gre");
     }
 
@@ -60,6 +58,7 @@ public class GamePrinterPL implements GamePrinter {
     public void printDice(int number) {
         System.out.println("\nKostka: " + number);
     }
+
     public void printPlayerTurn(Player player) {
         System.out.println("Gracz " + player.getName() + " - podaj liczbe:");
     }

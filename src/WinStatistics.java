@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Iterator;
 
-public class WinStatistics implements Statistics{
+public class WinStatistics implements Statistics {
     private Map<Player, Integer> score = new HashMap<>();
     @Override
     public void addPlayer(Player player) {

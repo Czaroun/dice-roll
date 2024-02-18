@@ -1,7 +1,6 @@
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Random;
-
+import java.util.List;
+import java.util.ArrayList;
 public class Game {
     private Random dice = new Random();
     private List<Player> players = new ArrayList<>();
