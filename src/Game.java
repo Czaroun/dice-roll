@@ -8,18 +8,28 @@ public class Game {
     private int cnt = -1;
     private int cntBot = -1;
     private int rounds = 5;
+    public final Settings settings;
     public final Statistics stats;
-
     public Game() {
-        this(null);
+        this(null, null);
     }
-    public Game(Statistics stats) {
+    public Game(Settings settings, Statistics stats) {
+        if (settings != null) {
+            this.settings = settings;
+        }
+        else {
+            this.settings = new DefaultSettings();
+        }
+
         if (stats != null) {
             this.stats = stats;
         }
         else {
             this.stats = new NullStatistics();
         }
+    }
+    public void config(GamePrinter printer, GameScanner scanner) {
+        settings.setGameMode(printer, scanner);
     }
     public void addPlayer(Player player) {
         players.forEach( p -> {

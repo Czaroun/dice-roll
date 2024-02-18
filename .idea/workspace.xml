@@ -5,20 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5da2e2c-6303-4226-b434-cd75a642bf3b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/DefaultSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Settings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/UserSettings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GamePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GamePrinterEN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePrinterEN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GamePrinterPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GamePrinterPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameScanner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MultiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MultiConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NullStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NullStatistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerComp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerHuman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlayerHuman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Statistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WinStatistics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +78,7 @@
       <updated>1708020373692</updated>
       <workItem from="1708020374774" duration="2055000" />
       <workItem from="1708111262365" duration="14083000" />
-      <workItem from="1708266616485" duration="9368000" />
+      <workItem from="1708266616485" duration="11217000" />
     </task>
     <servers />
   </component>

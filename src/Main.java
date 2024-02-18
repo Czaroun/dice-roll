@@ -5,7 +5,10 @@ public class Main {
         printer.printGameWithStatistics();
         Statistics stats = gameScanner.GameWithStatistics(); // obiekt do statystyk
 
-        Game game = new Game(stats); // obiekt gry (ze statystykami lub bez)
+        Game game = new Game(new UserSettings(), stats); // obiekt gry
+        game.config(printer, gameScanner);
+
+
 
         printer.printSingleOrMulti();
         if (gameScanner.singleOrMulti()) { // singleplayer
