@@ -8,6 +8,7 @@ The project aimed to implement an object-oriented approach to programming in Jav
   - The user first selects the game mode
   - If multiplayer is selected, the user manages players (including computer players)
   - Selecting the number of rounds
+
 Moreover, in each mode the user indicates whether he wants to have a game with statistics or not
 
 ## Technologies
