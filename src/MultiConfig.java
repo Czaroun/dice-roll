@@ -11,6 +11,8 @@ public class MultiConfig {
         game.removePlayer(gameScanner.enterName());
     }
     public void removePlayerComp(Game game) {
-
+        StringBuilder name = new StringBuilder();
+        name.append("Bot").append(game.getCntBot());
+        game.removePlayer(name.toString());
     }
 }

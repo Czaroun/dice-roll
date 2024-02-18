@@ -45,6 +45,12 @@ public class Game {
     }
     public void removePlayer(String name) {
         players.removeIf(player -> player.getName().equals(name));
+        if (name.contains("Bot")) {
+            cntBot++;
+        }
+    }
+    public int getCntBot() {
+        return cntBot;
     }
     public void play() {
         int number;
