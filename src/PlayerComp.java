@@ -8,7 +8,7 @@ public class PlayerComp extends Player{
         isComputerPlayer = true;
     }
     @Override
-    public int guess() {
+    public int guess(GameScanner gameScanner) {
         return brain.nextInt(6) + 1;
     }
 }

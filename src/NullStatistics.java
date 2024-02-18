@@ -10,7 +10,7 @@ public class NullStatistics implements Statistics{
     }
 
     @Override
-    public void print() {
+    public void print(GamePrinter printer) {
 
     }
 }

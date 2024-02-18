@@ -12,7 +12,10 @@ public class MultiConfig {
     }
     public void removePlayerComp(Game game) {
         StringBuilder name = new StringBuilder();
-        name.append("Bot").append(game.getCntBot());
+        name.append("Bot");
+        if (game.getCntBot() < -1) {
+            name.append(game.getCntBot() + 1);
+        }
         game.removePlayer(name.toString());
     }
 }

@@ -43,4 +43,35 @@ public class GamePrinterEN implements GamePrinter{
         System.out.println("REMOVING PLAYER");
         System.out.println("Enter player name: ");
     }
+
+    @Override
+    public void printDice(int number) {
+        System.out.println("\nDice: " + number);
+    }
+
+    @Override
+    public void printPlayerTurn(Player player) {
+        System.out.println("Player" + player.getName() + " - enter number:");
+    }
+
+    @Override
+    public void printHowManyRounds() {
+        System.out.println("How many rounds would you like to play?");
+    }
+
+    @Override
+    public void printCorrectAnswer() {
+        System.out.println("Well done! You hit number");
+    }
+
+    @Override
+    public void printWrongAnswer() {
+        System.out.println("Missed! You didn't hit");
+    }
+
+    @Override
+    public void printStats() {
+        System.out.println("---------------------------");
+        System.out.println("STATISTICS");
+    }
 }

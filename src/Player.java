@@ -23,5 +23,5 @@ abstract public class Player {
     public boolean getIsComputerPlayer() {
         return isComputerPlayer;
     }
-    abstract public int guess(); // metoda abstrakcyjna do zaimplementowania w klasach dziedziczacych
+    abstract public int guess(GameScanner gameScanner); // metoda abstrakcyjna do zaimplementowania w klasach dziedziczacych
 }

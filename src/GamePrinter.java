@@ -7,4 +7,10 @@ public interface GamePrinter {
     void printMenuMulti(Game game);
     void printEnterNameMulti();
     void printRemovePlayerHuman();
+    void printDice(int number);
+    void printPlayerTurn(Player player);
+    void printHowManyRounds();
+    void printCorrectAnswer();
+    void printWrongAnswer();
+    void printStats();
 }

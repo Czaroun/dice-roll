@@ -44,4 +44,33 @@ public class GamePrinterPL implements GamePrinter {
         System.out.println("USUWANIE GRACZA");
         System.out.println("Wprowadz imie gracza");
     }
+
+    @Override
+    public void printDice(int number) {
+        System.out.println("\nKostka: " + number);
+    }
+    public void printPlayerTurn(Player player) {
+        System.out.println("Gracz " + player.getName() + " - podaj liczbe:");
+    }
+
+    @Override
+    public void printHowManyRounds() {
+        System.out.println("Ile rund chcesz zagrac?");
+    }
+
+    @Override
+    public void printCorrectAnswer() {
+        System.out.println("BRAWO! Trafiles");
+    }
+
+    @Override
+    public void printWrongAnswer() {
+        System.out.println("ZLE! Nie trafiles");
+    }
+
+    @Override
+    public void printStats() {
+        System.out.println("---------------------------");
+        System.out.println("STATYSTYKI");
+    }
 }

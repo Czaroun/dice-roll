@@ -12,10 +12,13 @@ public class WinStatistics implements Statistics{
         int pts = score.getOrDefault(player, 0);
         score.put(player, pts + 1);
     }
+
     @Override
-    public void print() {
+    public void print(GamePrinter printer) {
+        printer.printStats();
         score.forEach( (player, pts) -> {
             System.out.println(player.getName() + ": " + pts);
         });
     }
+
 }

@@ -32,11 +32,13 @@ public class Main {
 
 
         }
-        for (int i = 0; i < 5; i++) {
-            game.play();
+        printer.printHowManyRounds();
+        game.setRounds(gameScanner.enterNumber());
+        for (int i = 0; i < game.getRounds(); i++) {
+            game.play(printer, gameScanner);
         }
 
         gameScanner.close();
-        game.stats.print();
+        game.stats.print(printer);
     }
 }

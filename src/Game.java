@@ -7,7 +7,9 @@ public class Game {
     private List<Player> players = new ArrayList<>();
     private int cnt = -1;
     private int cntBot = -1;
+    private int rounds = 5;
     public final Statistics stats;
+
     public Game() {
         this(null);
     }
@@ -35,9 +37,7 @@ public class Game {
         stats.addPlayer(player);
     }
 
-    public void printStats() {
-        stats.print();
-    }
+
     public void printPlayers() {
         players.forEach( (player) -> {
             System.out.println(player.getName());
@@ -45,35 +45,39 @@ public class Game {
     }
     public void removePlayer(String name) {
         players.removeIf(player -> player.getName().equals(name));
-        if (name.contains("Bot")) {
+        if (name.startsWith("Bot-")) {
             cntBot++;
         }
     }
     public int getCntBot() {
         return cntBot;
     }
-    public void play() {
-        int number;
+    public void play(GamePrinter printer, GameScanner gameScanner) {
         int guess = 0;
-        boolean repeat = true;
+        int number = dice.nextInt(6) + 1;
 
-        do {
-            number = dice.nextInt(6) + 1;
-            System.out.println("Kostka: " + number);
+        // Comment out the line bellow to avoid seeing the corect answer
+        printer.printDice(number);
+        ///////////////////////////////////////////
 
-            for (Player player : players) {
-                guess = player.guess();
-                System.out.println("Gracz: " + player.getName() + ": " + guess);
+        for (Player player : players) {
+            printer.printPlayerTurn(player);
+            guess = player.guess(gameScanner);
                 if (guess == number) {
-                    System.out.println("BRAWO!");
-                    repeat = false;
+                    printer.printCorrectAnswer();
                     stats.updatePlayer(player);
                 }
                 else {
-                    System.out.println("ŹLE");
+                    printer.printWrongAnswer();
                 }
             }
-        }
-        while (repeat);
+    }
+
+    public int getRounds() {
+        return rounds;
+    }
+
+    public void setRounds(int rounds) {
+        this.rounds = rounds;
     }
 }

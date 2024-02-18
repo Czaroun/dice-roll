@@ -8,8 +8,7 @@ public class PlayerHuman extends Player{
         super(name); // wywolanie konstruktora klasy nadrzednej (tutaj wywolaj konstruktor Player(String name) )
     }
     @Override
-    public int guess() {
-        System.out.println("Wpisz liczbe: ");
-        return input.nextInt();
+    public int guess(GameScanner gameScanner) {
+        return gameScanner.enterNumber();
     }
 }

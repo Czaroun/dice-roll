@@ -31,6 +31,11 @@ public class GameScanner {
     public String enterName() {
         return input.nextLine();
     }
+    public int enterNumber() {
+        int number = input.nextInt();
+        input.nextLine();
+        return number;
+    }
     public boolean menuMulti(Game game, GamePrinter printer) {
         setDefaultChoice();
         do {
@@ -48,16 +53,15 @@ public class GameScanner {
             case 3:
                 multiConfig.addPlayerComp(game);
                 break;
-//            case 4:
-//                menuMultiDeletePlayerComp(game);
-//                break;
+            case 4:
+                multiConfig.removePlayerComp(game);
+                break;
             case 5:
                 System.out.println();
                 return false;
         }
         return true;
     }
-
     private void setDefaultChoice() {
         choice = 0;
     }
