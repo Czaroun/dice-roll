@@ -5,6 +5,7 @@ public class PlayerComp extends Player{
     public PlayerComp() {}
     public PlayerComp(String name) {
         super(name); // wywolanie konstruktora klasy nadrzednej (tutaj wywolaj konstruktor Player(String name) )
+        isComputerPlayer = true;
     }
     @Override
     public int guess() {

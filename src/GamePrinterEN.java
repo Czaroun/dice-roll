@@ -26,14 +26,21 @@ public class GamePrinterEN implements GamePrinter{
         System.out.println("---------------------------");
         System.out.println("MENU:");
         System.out.println("1.Add new player");
-        System.out.println("2.Delete player");
+        System.out.println("2.Remove player");
         System.out.println("3.Add new player (computer)");
-        System.out.println("4.Delete player (computer)");
+        System.out.println("4.Remove player (computer)");
         System.out.println("5.Start game");
     }
 
     @Override
     public void printEnterNameMulti() {
-        System.out.println("Enter playerr name: ");
+        System.out.println("ADDING NEW PLAYER");
+        System.out.println("Enter player name: ");
+    }
+
+    @Override
+    public void printRemovePlayerHuman() {
+        System.out.println("REMOVING PLAYER");
+        System.out.println("Enter player name: ");
     }
 }

@@ -3,6 +3,7 @@ import java.util.Random;
 abstract public class Player {
     private Random brain = new Random();
     private String name = "NoName";
+    protected boolean isComputerPlayer = false;
     public Player() {}
     public Player(String name) {
         setName(name);
@@ -18,6 +19,9 @@ abstract public class Player {
         else {
             throw new IllegalArgumentException();
         }
+    }
+    public boolean getIsComputerPlayer() {
+        return isComputerPlayer;
     }
     abstract public int guess(); // metoda abstrakcyjna do zaimplementowania w klasach dziedziczacych
 }

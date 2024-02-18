@@ -6,4 +6,5 @@ public interface GamePrinter {
     void printEnterNameSingle();
     void printMenuMulti(Game game);
     void printEnterNameMulti();
+    void printRemovePlayerHuman();
 }

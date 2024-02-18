@@ -6,7 +6,7 @@ public class Game {
     private Random dice = new Random();
     private List<Player> players = new ArrayList<>();
     private int cnt = -1;
-//    private int cntBot = -1;
+    private int cntBot = -1;
     public final Statistics stats;
     public Game() {
         this(null);
@@ -22,13 +22,19 @@ public class Game {
     public void addPlayer(Player player) {
         players.forEach( p -> {
             if (player.getName().equals(p.getName())) {
-                player.setName(player.getName() + cnt);
-                cnt -= 1;
+                player.setName(player.getName() + (player.getIsComputerPlayer() ? cntBot : cnt));
+                if (player.getIsComputerPlayer()) {
+                    cntBot -= 1;
+                }
+                else {
+                    cnt -= 1;
+                }
             }
         });
         players.add(player);
         stats.addPlayer(player);
     }
+
     public void printStats() {
         stats.print();
     }

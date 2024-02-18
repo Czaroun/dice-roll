@@ -35,6 +35,13 @@ public class GamePrinterPL implements GamePrinter {
 
     @Override
     public void printEnterNameMulti() {
+        System.out.println("DODAWANIE NOWEGO GRACZA");
         System.out.println("Wprowadz imie gracza: ");
+    }
+
+    @Override
+    public void printRemovePlayerHuman() {
+        System.out.println("USUWANIE GRACZA");
+        System.out.println("Wprowadz imie gracza");
     }
 }

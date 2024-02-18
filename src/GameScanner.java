@@ -42,9 +42,9 @@ public class GameScanner {
             case 1:
                 multiConfig.addPlayerHuman(game, printer, this);
                 break;
-//            case 2:
-//                menuMultiDeletePlayerHuman(game);
-//                break;
+            case 2:
+                multiConfig.removePlayerHuman(game, printer, this);
+                break;
             case 3:
                 multiConfig.addPlayerComp(game);
                 break;
