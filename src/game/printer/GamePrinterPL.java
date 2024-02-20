@@ -1,4 +1,4 @@
-package printer;
+package game.printer;
 
 import game.Game;
 import players.*;

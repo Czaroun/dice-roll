@@ -1,7 +1,7 @@
 package settings;
 
+import game.printer.GamePrinter;
 import players.*;
-import printer.*;
 import game.*;
 
 public class MultiUserSettings extends UserSettings {

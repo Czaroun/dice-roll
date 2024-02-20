@@ -1,7 +1,7 @@
 package stats;
 
 import players.Player;
-import printer.GamePrinter;
+import game.printer.GamePrinter;
 
 public interface Statistics {
     void addPlayer(Player player);

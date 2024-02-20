@@ -1,6 +1,6 @@
 package game;
 
-import printer.*;
+import game.printer.GamePrinter;
 import settings.*;
 import stats.*;
 

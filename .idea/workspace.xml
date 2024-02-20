@@ -6,23 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="c5da2e2c-6303-4226-b434-cd75a642bf3b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DefaultSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/DefaultSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GamePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/printer/GamePrinter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GamePrinterEN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/printer/GamePrinterEN.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GamePrinterPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/printer/GamePrinterPL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameScanner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MultiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/MultiConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NullStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stats/NullStatistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerComp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/players/PlayerComp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlayerHuman.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/players/PlayerHuman.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/Settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stats/Statistics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/UserSettings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WinStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stats/WinStatistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/GameScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/printer/GamePrinter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/printer/GamePrinter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/printer/GamePrinterEN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/printer/GamePrinterEN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/printer/GamePrinterPL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/printer/GamePrinterPL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/DefaultSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/DefaultSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/MultiUserSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/MultiUserSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/settings/UserSettings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/settings/UserSettings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stats/NullStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stats/NullStatistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stats/Statistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stats/Statistics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stats/WinStatistics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/stats/WinStatistics.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,11 +74,11 @@
       <recent name="E:\Dokumenty z C\US\3 semestr\Podstawy inzynierii oprogramowania\Laboratorium\DiceRoll\out\production\DiceRoll\players" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="game.printer" />
       <recent name="stats" />
       <recent name="players" />
       <recent name="printer" />
       <recent name="settings" />
-      <recent name="printing" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -104,7 +100,7 @@
       <workItem from="1708020374774" duration="2055000" />
       <workItem from="1708111262365" duration="14083000" />
       <workItem from="1708266616485" duration="20823000" />
-      <workItem from="1708453943610" duration="777000" />
+      <workItem from="1708453943610" duration="1940000" />
     </task>
     <servers />
   </component>
@@ -126,7 +122,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/settings/MultiConfig.java</url>
+          <url>file://$PROJECT_DIR$/src/settings/MultiUserSettings.java</url>
           <line>19</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>

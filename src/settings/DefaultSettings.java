@@ -1,7 +1,7 @@
 package settings;
 
 import game.GameScanner;
-import printer.GamePrinter;
+import game.printer.GamePrinter;
 public class DefaultSettings implements Settings {
     private boolean isMultiplayer;
     private int rounds = 5;

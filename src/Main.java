@@ -1,6 +1,6 @@
 import game.Game;
 import game.GameScanner;
-import printer.GamePrinterPL;
+import game.printer.GamePrinterPL;
 import settings.Settings;
 import stats.Statistics;
 

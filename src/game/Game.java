@@ -2,7 +2,7 @@ package game;
 
 import players.Player;
 import players.PlayerHuman;
-import printer.GamePrinter;
+import game.printer.GamePrinter;
 import settings.DefaultSettings;
 import settings.Settings;
 import settings.UserSettings;

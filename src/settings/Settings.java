@@ -1,7 +1,7 @@
 package settings;
 
 import game.GameScanner;
-import printer.GamePrinter;
+import game.printer.GamePrinter;
 
 public interface Settings {
     void setGameMode(GamePrinter printer, GameScanner scanner);
