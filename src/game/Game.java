@@ -1,27 +1,30 @@
 package game;
 
+import game.printer.GamePrinter;
 import players.Player;
 import players.PlayerHuman;
-import game.printer.GamePrinter;
 import settings.DefaultSettings;
 import settings.Settings;
 import settings.UserSettings;
 import stats.NullStatistics;
 import stats.Statistics;
 
-import java.util.Random;
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
 public class Game {
-    private Random dice = new Random();
-    private List<Player> players = new ArrayList<>();
-    private int cnt = -1;
-    private int cntBot = -1;
     public final Settings settings;
     public final Statistics stats;
+    private final Random dice = new Random();
+    private final List<Player> players = new ArrayList<>();
+    private int cnt = -1;
+    private int cntBot = -1;
+
     public Game() {
         this(null, null);
     }
+
     public Game(Settings settings, Statistics stats) {
         if (settings != null) {
             this.settings = settings;
@@ -37,13 +40,14 @@ public class Game {
             this.stats = new NullStatistics();
         }
     }
+
     public void config(Game game, GamePrinter printer, GameScanner scanner) {
         settings.setGameMode(printer, scanner);
         if (settings instanceof DefaultSettings) {
             addPlayer(new PlayerHuman());
             printer.printDefaultSettings();
         }
-        else if (settings instanceof UserSettings){
+        else if (settings instanceof UserSettings) {
             if (!settings.isMultiPlayer()) {
                 printer.printEnterNameSingle();
                 addPlayer(new PlayerHuman(scanner.enterName()));
@@ -54,14 +58,15 @@ public class Game {
                     printer.printMenuMulti(game);
                     startGame = scanner.menuMulti(game, printer);
                 }
-                while (startGame);
+                while (startGame || howManyPlayers(printer) < 2);
             }
             printer.printHowManyRounds();
             settings.setRounds(scanner.enterNumber());
         }
     }
+
     public void addPlayer(Player player) {
-        players.forEach( p -> {
+        players.forEach(p -> {
             if (player.getName().equals(p.getName())) {
                 player.setName(player.getName() + (player.getIsComputerPlayer() ? cntBot : cnt));
                 if (player.getIsComputerPlayer()) {
@@ -75,11 +80,13 @@ public class Game {
         players.add(player);
         stats.addPlayer(player);
     }
+
     public void printPlayers() {
-        players.forEach( (player) -> {
+        players.forEach((player) -> {
             System.out.println(player.getName());
         });
     }
+
     public void removePlayer(String name) {
         players.removeIf(player -> player.getName().equals(name));
         if (name.startsWith("Bot-")) {
@@ -87,9 +94,22 @@ public class Game {
         }
         stats.removePlayer(name);
     }
+
+    public int howManyPlayers(GamePrinter printer) {
+        int cntPlayer = 0;
+        for (Player player : players) {
+            cntPlayer++;
+        }
+        if (cntPlayer < 2) {
+            printer.printNotEnoughPlayers();
+        }
+        return cntPlayer;
+    }
+
     public int getCntBot() {
         return cntBot;
     }
+
     public void play(GamePrinter printer, GameScanner gameScanner) {
         int guess = 0;
         int number = dice.nextInt(6) + 1;
@@ -104,21 +124,13 @@ public class Game {
             }
             guess = player.guess(gameScanner);
             printer.printPlayerGuess(player, guess);
-                if (guess == number) {
-                    printer.printCorrectAnswer();
-                    stats.updatePlayer(player);
-                }
-                else {
-                    printer.printWrongAnswer();
-                }
+            if (guess == number) {
+                printer.printCorrectAnswer();
+                stats.updatePlayer(player);
             }
-    }
-
-//    public int getRounds() {
-//        return rounds;
-//    }
-//
-//    public void setRounds(int rounds) {
-//        this.rounds = rounds;
-//    }
+            else {
+                printer.printWrongAnswer();
+            }
+        } // for
+    } // play()
 }

@@ -1,21 +1,26 @@
 package settings;
 
+import game.Game;
+import game.GameScanner;
 import game.printer.GamePrinter;
-import players.*;
-import game.*;
+import players.PlayerComp;
+import players.PlayerHuman;
 
 public class MultiUserSettings extends UserSettings {
     public void addPlayerHuman(Game game, GamePrinter printer, GameScanner gameScanner) {
         printer.printEnterNameMulti();
         game.addPlayer(new PlayerHuman(gameScanner.enterName()));
     }
+
     public void addPlayerComp(Game game) {
         game.addPlayer(new PlayerComp("Bot"));
     }
+
     public void removePlayerHuman(Game game, GamePrinter printer, GameScanner gameScanner) {
         printer.printRemovePlayerHuman();
         game.removePlayer(gameScanner.enterName());
     }
+
     public void removePlayerComp(Game game) {
         StringBuilder name = new StringBuilder();
         name.append("Bot");

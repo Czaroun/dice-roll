@@ -2,12 +2,14 @@ package settings;
 
 import game.GameScanner;
 import game.printer.GamePrinter;
+
 public class DefaultSettings implements Settings {
+    private final int rounds = 5;
     private boolean isMultiplayer;
-    private int rounds = 5;
+
     @Override
     public void setGameMode(GamePrinter printer, GameScanner scanner) {
-       isMultiplayer = true;
+        isMultiplayer = true;
     }
 
     @Override
@@ -21,5 +23,6 @@ public class DefaultSettings implements Settings {
     }
 
     @Override
-    public void setRounds(int rounds) {}
+    public void setRounds(int rounds) {
+    }
 }

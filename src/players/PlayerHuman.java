@@ -1,11 +1,8 @@
 package players;
 
-import java.util.Scanner;
-import game.*;
-public class PlayerHuman extends Player {
-    private Scanner input = new Scanner(System.in);
-    private String name = "NoName";
+import game.GameScanner;
 
+public class PlayerHuman extends Player {
     public PlayerHuman() {
     }
 

@@ -1,10 +1,11 @@
 package players;
 
+import game.GameScanner;
+
 import java.util.Random;
-import game.*;
 
 public class PlayerComp extends Player {
-    private Random brain = new Random();
+    private final Random brain = new Random();
 
     public PlayerComp() {
     }

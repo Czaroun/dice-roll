@@ -1,7 +1,8 @@
 package game.printer;
 
 import game.Game;
-import players.*;
+import players.Player;
+
 public class GamePrinterEN implements GamePrinter {
     @Override
     public void printGameWithStatistics() {
@@ -56,6 +57,11 @@ public class GamePrinterEN implements GamePrinter {
     public void printRemovePlayerHuman() {
         System.out.println("REMOVING PLAYER");
         System.out.println("Enter player name: ");
+    }
+
+    @Override
+    public void printNotEnoughPlayers() {
+        System.out.println("Too few players to start a multiplayer game");
     }
 
     @Override

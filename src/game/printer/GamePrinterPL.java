@@ -1,7 +1,7 @@
 package game.printer;
 
 import game.Game;
-import players.*;
+import players.Player;
 
 public class GamePrinterPL implements GamePrinter {
     @Override
@@ -57,6 +57,11 @@ public class GamePrinterPL implements GamePrinter {
     public void printRemovePlayerHuman() {
         System.out.println("USUWANIE GRACZA");
         System.out.println("Wprowadz imie gracza");
+    }
+
+    @Override
+    public void printNotEnoughPlayers() {
+        System.out.println("Za mala liczba graczy aby rozpoczac gre wielosobowa");
     }
 
     @Override
