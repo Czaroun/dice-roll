@@ -1,3 +1,8 @@
+package printer;
+
+import game.Game;
+import players.*;
+
 public class GamePrinterPL implements GamePrinter {
     @Override
     public void printGameWithStatistics() {

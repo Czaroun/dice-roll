@@ -1,4 +1,7 @@
+package players;
+
 import java.util.Random;
+import game.*;
 
 public class PlayerComp extends Player {
     private Random brain = new Random();
@@ -7,7 +10,7 @@ public class PlayerComp extends Player {
     }
 
     public PlayerComp(String name) {
-        super(name); // wywolanie konstruktora klasy nadrzednej (tutaj wywolaj konstruktor Player(String name) )
+        super(name); // wywolanie konstruktora klasy nadrzednej (tutaj wywolaj konstruktor players.Player(String name) )
         isComputerPlayer = true;
     }
 

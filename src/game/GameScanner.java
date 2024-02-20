@@ -1,9 +1,15 @@
+package game;
+
+import printer.*;
+import settings.*;
+import stats.*;
+
 import java.util.Scanner;
 
 public class GameScanner {
     private Scanner input = new Scanner(System.in);
     private int choice = 0;
-    private MultiConfig multiConfig = new MultiConfig();
+    private MultiUserSettings multiUserSettings = new MultiUserSettings();
     public Statistics gameWithStatistics(){
         setDefaultChoice();
         do {
@@ -59,16 +65,16 @@ public class GameScanner {
         input.nextLine();
         switch (choice) {
             case 1:
-                multiConfig.addPlayerHuman(game, printer, this);
+                multiUserSettings.addPlayerHuman(game, printer, this);
                 break;
             case 2:
-                multiConfig.removePlayerHuman(game, printer, this);
+                multiUserSettings.removePlayerHuman(game, printer, this);
                 break;
             case 3:
-                multiConfig.addPlayerComp(game);
+                multiUserSettings.addPlayerComp(game);
                 break;
             case 4:
-                multiConfig.removePlayerComp(game);
+                multiUserSettings.removePlayerComp(game);
                 break;
             case 5:
                 System.out.println();

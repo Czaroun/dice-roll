@@ -1,3 +1,8 @@
+package settings;
+
+import game.GameScanner;
+import printer.GamePrinter;
+
 public class UserSettings implements Settings {
     private boolean isMultiplayer;
     private int rounds;

@@ -1,3 +1,8 @@
+package printer;
+
+import game.Game;
+import players.*;
+
 public interface GamePrinter {
     void printGameWithStatistics();
 

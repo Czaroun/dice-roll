@@ -1,5 +1,7 @@
-import java.util.Scanner;
+package players;
 
+import java.util.Scanner;
+import game.*;
 public class PlayerHuman extends Player {
     private Scanner input = new Scanner(System.in);
     private String name = "NoName";
@@ -8,7 +10,7 @@ public class PlayerHuman extends Player {
     }
 
     public PlayerHuman(String name) {
-        super(name); // wywolanie konstruktora klasy nadrzednej (tutaj wywolaj konstruktor Player(String name) )
+        super(name); // wywolanie konstruktora klasy nadrzednej (tutaj wywolaj konstruktor players.Player(String name) )
     }
 
     @Override

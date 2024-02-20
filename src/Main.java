@@ -1,3 +1,9 @@
+import game.Game;
+import game.GameScanner;
+import printer.GamePrinterPL;
+import settings.Settings;
+import stats.Statistics;
+
 public class Main {
     public static void main(String[] args) {
         GamePrinterPL printer = new GamePrinterPL(); // obiekt od pisania

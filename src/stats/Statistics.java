@@ -1,3 +1,8 @@
+package stats;
+
+import players.Player;
+import printer.GamePrinter;
+
 public interface Statistics {
     void addPlayer(Player player);
     void updatePlayer(Player player);

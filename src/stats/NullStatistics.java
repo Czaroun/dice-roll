@@ -1,3 +1,8 @@
+package stats;
+
+import players.Player;
+import printer.GamePrinter;
+
 public class NullStatistics implements Statistics {
     @Override
     public void addPlayer(Player player) {

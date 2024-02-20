@@ -1,4 +1,10 @@
-public class MultiConfig {
+package settings;
+
+import players.*;
+import printer.*;
+import game.*;
+
+public class MultiUserSettings extends UserSettings {
     public void addPlayerHuman(Game game, GamePrinter printer, GameScanner gameScanner) {
         printer.printEnterNameMulti();
         game.addPlayer(new PlayerHuman(gameScanner.enterName()));

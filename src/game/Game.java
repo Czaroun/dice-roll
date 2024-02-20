@@ -1,3 +1,14 @@
+package game;
+
+import players.Player;
+import players.PlayerHuman;
+import printer.GamePrinter;
+import settings.DefaultSettings;
+import settings.Settings;
+import settings.UserSettings;
+import stats.NullStatistics;
+import stats.Statistics;
+
 import java.util.Random;
 import java.util.List;
 import java.util.ArrayList;

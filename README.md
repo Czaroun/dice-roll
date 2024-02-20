@@ -4,7 +4,7 @@ This project was implemented during IT studies as part of a Java programming cla
 ## General Info
 The project aimed to implement an object-oriented approach to programming in Java. The game can be played in different modes:
 - Quick singleplayer game
-- Game mode (Singleplayer/Multiplayer, Customised settings):
+- game.Game mode (Singleplayer/Multiplayer, Customised settings):
   - The user first selects the game mode
   - If multiplayer is selected, the user manages players (including computer players)
   - Selecting the number of rounds

@@ -1,7 +1,9 @@
+package players;
+
+import game.*;
 import java.util.Random;
 
 abstract public class Player {
-    private Random brain = new Random();
     private String name = "NoName";
     protected boolean isComputerPlayer = false;
     public Player() {}

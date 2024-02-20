@@ -1,3 +1,8 @@
+package stats;
+
+import players.Player;
+import printer.GamePrinter;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Iterator;
