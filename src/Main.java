@@ -1,12 +1,12 @@
 import game.Game;
 import game.GameScanner;
-import game.printer.GamePrinterPL;
+import game.printer.*;
 import settings.Settings;
 import stats.Statistics;
 
 public class Main {
     public static void main(String[] args) {
-        GamePrinterPL printer = new GamePrinterPL(); // obiekt od pisania
+        GamePrinter printer = new GamePrinterEN(); // obiekt od pisania
         GameScanner gameScanner = new GameScanner(); // obiekt od odczytywania danych z konsoli
 
         printer.printGameWithSettings();

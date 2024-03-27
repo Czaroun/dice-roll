@@ -6,14 +6,14 @@ import players.Player;
 public class GamePrinterEN implements GamePrinter {
     @Override
     public void printGameWithStatistics() {
-        System.out.println("1.game.Game with statistics");
-        System.out.println("2.game.Game without statistics");
+        System.out.println("1.Game with statistics");
+        System.out.println("2.Game without statistics");
     }
 
     @Override
     public void printGameWithSettings() {
         System.out.println("1.Quick singleplayer game");
-        System.out.println("2.game.Game mode (Singleplayer/Multiplayer, Customised settings)");
+        System.out.println("2.Game mode (Singleplayer/Multiplayer, Customised settings)");
     }
 
     @Override
@@ -71,12 +71,12 @@ public class GamePrinterEN implements GamePrinter {
 
     @Override
     public void printPlayerTurn(Player player) {
-        System.out.println("players.Player" + player.getName() + " - enter number:");
+        System.out.println("Player " + player.getName() + " - enter number:");
     }
 
     @Override
     public void printPlayerGuess(Player player, int guess) {
-        System.out.println("players.Player " + player.getName() + ": " + guess);
+        System.out.println("Player " + player.getName() + ": " + guess);
     }
 
     @Override
